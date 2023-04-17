@@ -38,7 +38,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who's playing?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDn-j7-041">
                                                 <rect key="frame" x="34.333333333333343" y="0.0" width="326.66666666666663" height="42"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -151,7 +151,9 @@
                         <outlet property="backwardButton" destination="0Ot-1L-sd5" id="0jz-v5-mE9"/>
                         <outlet property="commandField1" destination="HJA-he-nb1" id="Uug-uS-fx9"/>
                         <outlet property="commandField2" destination="cge-Ne-cXi" id="oQ4-XI-yQq"/>
+                        <outlet property="firstCommandIcon" destination="6Uq-zZ-r8y" id="DlT-EJ-YId"/>
                         <outlet property="firstCommandLabel" destination="gpt-sd-GFY" id="79V-SJ-cPh"/>
+                        <outlet property="secondCommandIcon" destination="mYh-r1-y8I" id="vIo-Ep-8x8"/>
                         <outlet property="secondCommandLabel" destination="5iV-X1-ALU" id="Ht3-su-aNt"/>
                         <outlet property="startGameButton" destination="2Vi-KI-KsL" id="xex-GP-Bcm"/>
                     </connections>

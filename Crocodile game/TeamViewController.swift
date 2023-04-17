@@ -14,8 +14,12 @@ class TeamViewController: UIViewController {
     @IBOutlet weak var firstCommandLabel: UILabel!
     @IBOutlet weak var secondCommandLabel: UILabel!
     @IBOutlet weak var backwardButton: UIButton!
+    @IBOutlet weak var firstCommandIcon: UIImageView!
+    @IBOutlet weak var secondCommandIcon: UIImageView!
     
     let commandNames = ["Cowboys", "Aliens", "Low expectations", "All pain, no gain", "Baby boomers", "Yellow cards", "Spice girls", "Cereal Killers", "X-men", "Hobbits"]
+    
+    let commandIcon = [ #imageLiteral(resourceName: "command1"), #imageLiteral(resourceName: "command2"), #imageLiteral(resourceName: "command3"), #imageLiteral(resourceName: "command4")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,7 @@ class TeamViewController: UIViewController {
         commandField2.layer.cornerRadius = 10
         
         setCommandNames()
+        setCommandIcon()
     }
     
     @IBAction func backwardButtonPressed(_ sender: UIButton) {
@@ -31,7 +36,7 @@ class TeamViewController: UIViewController {
     }
     
     @IBAction func startGameButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToGameViewController", sender: self)
+        performSegue(withIdentifier: "goToCategoryViewController", sender: self)
     }
     
     func setCommandNames() {
@@ -46,6 +51,17 @@ class TeamViewController: UIViewController {
         
         firstCommandLabel.text = firstName
         secondCommandLabel.text = secondName
+    }
+    
+    func setCommandIcon() {
+        let firstIcon = commandIcon.randomElement()
+        var secondIcon = commandIcon.randomElement()
+        
+        while secondIcon == firstIcon {
+            secondIcon = commandIcon.randomElement()
+        }
+        firstCommandIcon.image = firstIcon
+        secondCommandIcon.image = secondIcon
     }
 
 }
