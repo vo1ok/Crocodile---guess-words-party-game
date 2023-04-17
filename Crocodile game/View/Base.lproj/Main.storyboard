@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1fG-V1-ubf">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Crocodile_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+        <!--Rules View Controller-->
+        <scene sceneID="d66-ok-q7u">
+            <objects>
+                <viewController id="1fG-V1-ubf" customClass="RulesViewController" customModule="Crocodile_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDt-pj-ten">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="rulesBack" translatesAutoresizingMaskIntoConstraints="NO" id="v1e-jk-lOD">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-o1-SQx">
+                                <rect key="frame" x="10" y="57" width="370" height="743"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRH-lM-TRl">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAw-em-LPV">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pAw-em-LPV" firstAttribute="top" secondItem="oRH-lM-TRl" secondAttribute="top" id="4DP-TL-1ox"/>
+                                            <constraint firstAttribute="trailing" secondItem="pAw-em-LPV" secondAttribute="trailing" id="YER-YD-F0G"/>
+                                            <constraint firstItem="pAw-em-LPV" firstAttribute="leading" secondItem="oRH-lM-TRl" secondAttribute="leading" id="b5n-ZO-xEc"/>
+                                            <constraint firstAttribute="bottom" secondItem="pAw-em-LPV" secondAttribute="bottom" id="cyd-oI-27I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oRH-lM-TRl" firstAttribute="width" secondItem="jgS-o1-SQx" secondAttribute="width" id="31L-2N-ieK"/>
+                                    <constraint firstAttribute="trailing" secondItem="oRH-lM-TRl" secondAttribute="trailing" id="5fG-8v-8qo"/>
+                                    <constraint firstItem="oRH-lM-TRl" firstAttribute="top" secondItem="jgS-o1-SQx" secondAttribute="top" id="6Re-Fp-Tyb"/>
+                                    <constraint firstItem="oRH-lM-TRl" firstAttribute="leading" secondItem="jgS-o1-SQx" secondAttribute="leading" id="BGe-h8-W8D"/>
+                                    <constraint firstAttribute="bottom" secondItem="oRH-lM-TRl" secondAttribute="bottom" id="OIl-Jl-47g"/>
+                                    <constraint firstItem="oRH-lM-TRl" firstAttribute="height" secondItem="jgS-o1-SQx" secondAttribute="height" priority="250" id="bCn-15-li7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K9w-JY-hmB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jgS-o1-SQx" firstAttribute="leading" secondItem="K9w-JY-hmB" secondAttribute="leading" constant="10" id="1JI-lJ-hmM"/>
+                            <constraint firstItem="v1e-jk-lOD" firstAttribute="leading" secondItem="tDt-pj-ten" secondAttribute="leading" id="BZW-RH-VCn"/>
+                            <constraint firstAttribute="trailing" secondItem="v1e-jk-lOD" secondAttribute="trailing" id="I8I-bu-4fQ"/>
+                            <constraint firstItem="K9w-JY-hmB" firstAttribute="bottom" secondItem="jgS-o1-SQx" secondAttribute="bottom" constant="10" id="Mla-hq-PG0"/>
+                            <constraint firstAttribute="bottom" secondItem="v1e-jk-lOD" secondAttribute="bottom" id="e3e-QF-Q34"/>
+                            <constraint firstItem="jgS-o1-SQx" firstAttribute="top" secondItem="K9w-JY-hmB" secondAttribute="top" constant="10" id="eDv-Ni-ovu"/>
+                            <constraint firstItem="K9w-JY-hmB" firstAttribute="trailing" secondItem="jgS-o1-SQx" secondAttribute="trailing" constant="10" id="jyc-HN-qga"/>
+                            <constraint firstItem="v1e-jk-lOD" firstAttribute="top" secondItem="tDt-pj-ten" secondAttribute="top" id="r7i-As-i2I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rulesText" destination="pAw-em-LPV" id="GSS-8w-eF6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0u-PQ-fUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812.30769230769226" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rulesBack" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
