@@ -8,10 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var commanField1: UIView!
+    @IBOutlet weak var commandField2: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        commandField2.layer.
     }
 
 
