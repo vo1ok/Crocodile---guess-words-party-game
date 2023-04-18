@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05E8564529ED2F25008DCB97 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E8564429ED2F25008DCB97 /* GameViewController.swift */; };
+		948ACE1D29ED73A10033EB9A /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948ACE1C29ED73A10033EB9A /* RulesViewController.swift */; };
 		95374C3629EC8D1D008C8372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95374C3529EC8D1D008C8372 /* AppDelegate.swift */; };
 		95374C3829EC8D1D008C8372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95374C3729EC8D1D008C8372 /* SceneDelegate.swift */; };
 		95374C3A29EC8D1D008C8372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95374C3929EC8D1D008C8372 /* ViewController.swift */; };
@@ -17,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05E8564429ED2F25008DCB97 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+
+		948ACE1C29ED73A10033EB9A /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		95374C3229EC8D1D008C8372 /* Crocodile game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crocodile game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95374C3529EC8D1D008C8372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95374C3729EC8D1D008C8372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +61,9 @@
 			children = (
 				95374C3529EC8D1D008C8372 /* AppDelegate.swift */,
 				95374C3729EC8D1D008C8372 /* SceneDelegate.swift */,
-				95374C3929EC8D1D008C8372 /* ViewController.swift */,
 				95374C3B29EC8D1D008C8372 /* Main.storyboard */,
-				05E8564429ED2F25008DCB97 /* GameViewController.swift */,
+				95374C3929EC8D1D008C8372 /* ViewController.swift */,
+				948ACE1C29ED73A10033EB9A /* RulesViewController.swift */,
 				95374C3E29EC8D22008C8372 /* Assets.xcassets */,
 				95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */,
 				95374C4329EC8D22008C8372 /* Info.plist */,
@@ -144,6 +145,7 @@
 				05E8564529ED2F25008DCB97 /* GameViewController.swift in Sources */,
 				95374C3A29EC8D1D008C8372 /* ViewController.swift in Sources */,
 				95374C3629EC8D1D008C8372 /* AppDelegate.swift in Sources */,
+				948ACE1D29ED73A10033EB9A /* RulesViewController.swift in Sources */,
 				95374C3829EC8D1D008C8372 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
