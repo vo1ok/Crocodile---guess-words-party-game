@@ -13,6 +13,7 @@
 		95374C3D29EC8D1D008C8372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95374C3B29EC8D1D008C8372 /* Main.storyboard */; };
 		95374C3F29EC8D22008C8372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95374C3E29EC8D22008C8372 /* Assets.xcassets */; };
 		95374C4229EC8D22008C8372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */; };
+		CAEC845F29EF318C0096C029 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC845E29EF318C0096C029 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		95374C3E29EC8D22008C8372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95374C4129EC8D22008C8372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95374C4329EC8D22008C8372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAEC845E29EF318C0096C029 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				95374C3729EC8D1D008C8372 /* SceneDelegate.swift */,
 				95374C3929EC8D1D008C8372 /* TeamViewController.swift */,
 				95374C3B29EC8D1D008C8372 /* Main.storyboard */,
+				CAEC845E29EF318C0096C029 /* CategoryViewController.swift */,
 				95374C3E29EC8D22008C8372 /* Assets.xcassets */,
 				95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */,
 				95374C4329EC8D22008C8372 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEC845F29EF318C0096C029 /* CategoryViewController.swift in Sources */,
 				95374C3A29EC8D1D008C8372 /* TeamViewController.swift in Sources */,
 				95374C3629EC8D1D008C8372 /* AppDelegate.swift in Sources */,
 				95374C3829EC8D1D008C8372 /* SceneDelegate.swift in Sources */,
