@@ -8,7 +8,6 @@
 import UIKit
 
 class TeamViewController: UIViewController {
-    @IBOutlet weak var startGameButton: UIButton!
     @IBOutlet weak var firstCommandLabel: UILabel!
     @IBOutlet weak var secondCommandLabel: UILabel!
     @IBOutlet weak var backwardButton: UIButton!
@@ -28,21 +27,18 @@ class TeamViewController: UIViewController {
         performSegue(withIdentifier: "goToRullesViewController", sender: self)
     }
     
-    @IBAction func startGamePressed(_ sender: UIButton) {
+    @IBAction func readyButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToCategoryViewController", sender: self)
     }
-        
     
     func setCommandNames() {
-        //Generate random name
         let firstName = commandNames.randomElement()
         var secondName = commandNames.randomElement()
         
-        //Check names are not repeated
         while secondName == firstName {
             secondName = commandNames.randomElement()
         }
-        
+
         firstCommandLabel.text = firstName
         secondCommandLabel.text = secondName
     }
