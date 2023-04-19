@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="5gd-dh-Wyk">
             <objects>
-                <viewController id="u7S-l6-Hta" sceneMemberID="viewController">
+                <viewController id="u7S-l6-Hta" customClass="ViewController" customModule="Crocodile_game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQR-sQ-NHJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -498,6 +498,9 @@
             <point key="canvasLocation" x="927.69230769230762" y="-36.255924170616112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zi0-13-g52"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="1125" height="2436"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
