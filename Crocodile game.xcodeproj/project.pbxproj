@@ -13,8 +13,6 @@
 		95374C3D29EC8D1D008C8372 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95374C3B29EC8D1D008C8372 /* MainViewController.storyboard */; };
 		95374C3F29EC8D22008C8372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95374C3E29EC8D22008C8372 /* Assets.xcassets */; };
 		95374C4229EC8D22008C8372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */; };
-		95C3312129EE53D900691580 /* CorrectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C3312029EE53D900691580 /* CorrectViewController.storyboard */; };
-		95C3312329EE551D00691580 /* WrongViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C3312229EE551D00691580 /* WrongViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		95374C3E29EC8D22008C8372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95374C4129EC8D22008C8372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95374C4329EC8D22008C8372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95C3312029EE53D900691580 /* CorrectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CorrectViewController.storyboard; sourceTree = "<group>"; };
-		95C3312229EE551D00691580 /* WrongViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WrongViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +62,6 @@
 				95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */,
 				95374C3B29EC8D1D008C8372 /* MainViewController.storyboard */,
 				95374C3E29EC8D22008C8372 /* Assets.xcassets */,
-				95C3312029EE53D900691580 /* CorrectViewController.storyboard */,
-				95C3312229EE551D00691580 /* WrongViewController.storyboard */,
 				95374C4329EC8D22008C8372 /* Info.plist */,
 			);
 			path = "Crocodile game";
@@ -131,11 +125,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C3312129EE53D900691580 /* CorrectViewController.storyboard in Resources */,
 				95374C4229EC8D22008C8372 /* LaunchScreen.storyboard in Resources */,
 				95374C3F29EC8D22008C8372 /* Assets.xcassets in Resources */,
 				95374C3D29EC8D1D008C8372 /* MainViewController.storyboard in Resources */,
-				95C3312329EE551D00691580 /* WrongViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
