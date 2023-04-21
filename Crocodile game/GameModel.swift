@@ -11,7 +11,7 @@ struct Theme {
     let ThemeWords: [String]
 }
 
-struct GameModule {
+struct GameModel {
     var team1: Team?
     var team2: Team?
     var words: [String]?
