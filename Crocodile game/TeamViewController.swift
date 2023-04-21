@@ -8,6 +8,9 @@
 import UIKit
 
 class TeamViewController: UIViewController {
+    
+    var model: GameModel?
+    
     @IBOutlet weak var firstCommandLabel: UILabel!
     @IBOutlet weak var secondCommandLabel: UILabel!
     @IBOutlet weak var backwardButton: UIButton!
