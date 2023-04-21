@@ -1,0 +1,1 @@
+["The Quicksand Quagmires", "The Awkward Turtles", "The Misfit Mavericks", "The Flaming Flamingos", "The Wacky Wombats", "The Looney Llamas", "The Nutty Narwhals", "The Goofy Gophers", "The Crazy Camels", "The Silly Sloths", "The Bumbling Bats", "The Jolly Jesters", "The Hilarious Hedgehogs", "The Chuckling Chimpanzees", "The Laughing Lemurs"].
