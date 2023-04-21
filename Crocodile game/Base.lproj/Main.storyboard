@@ -24,6 +24,69 @@
             </objects>
             <point key="canvasLocation" x="-165" y="4"/>
         </scene>
+        <!--Rules View Controller-->
+        <scene sceneID="3rf-bY-gkK">
+            <objects>
+                <viewController id="o3E-og-nm8" customClass="RulesViewController" customModule="Crocodile_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X87-wm-Gcs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xmv-ph-jMJ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-tp-IPC">
+                                <rect key="frame" x="10" y="69" width="373" height="739"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lul-4S-7SD">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0w-ZE-k55">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="B0w-ZE-k55" firstAttribute="leading" secondItem="lul-4S-7SD" secondAttribute="leading" id="0EV-17-zjX"/>
+                                            <constraint firstAttribute="bottom" secondItem="B0w-ZE-k55" secondAttribute="bottom" id="lkr-YI-QIG"/>
+                                            <constraint firstAttribute="trailing" secondItem="B0w-ZE-k55" secondAttribute="trailing" id="oRV-oh-QFY"/>
+                                            <constraint firstItem="B0w-ZE-k55" firstAttribute="top" secondItem="lul-4S-7SD" secondAttribute="top" id="yXt-Sl-yC4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lul-4S-7SD" secondAttribute="bottom" id="PKc-bR-mb0"/>
+                                    <constraint firstItem="lul-4S-7SD" firstAttribute="height" secondItem="MPT-tp-IPC" secondAttribute="height" priority="250" id="TbZ-uE-vQx"/>
+                                    <constraint firstItem="lul-4S-7SD" firstAttribute="leading" secondItem="MPT-tp-IPC" secondAttribute="leading" id="XD5-gj-WKk"/>
+                                    <constraint firstItem="lul-4S-7SD" firstAttribute="top" secondItem="MPT-tp-IPC" secondAttribute="top" id="ccP-0K-5t1"/>
+                                    <constraint firstAttribute="trailing" secondItem="lul-4S-7SD" secondAttribute="trailing" id="p9y-le-Lpp"/>
+                                    <constraint firstItem="lul-4S-7SD" firstAttribute="width" secondItem="MPT-tp-IPC" secondAttribute="width" id="wMH-v6-Zg5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e2H-J4-vLz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xmv-ph-jMJ" secondAttribute="trailing" id="2BU-8i-Jch"/>
+                            <constraint firstItem="xmv-ph-jMJ" firstAttribute="leading" secondItem="e2H-J4-vLz" secondAttribute="leading" id="3Bm-Wj-JNR"/>
+                            <constraint firstItem="MPT-tp-IPC" firstAttribute="leading" secondItem="e2H-J4-vLz" secondAttribute="leading" constant="10" id="8WO-zg-gxd"/>
+                            <constraint firstAttribute="bottom" secondItem="xmv-ph-jMJ" secondAttribute="bottom" id="I1c-P8-1K0"/>
+                            <constraint firstItem="MPT-tp-IPC" firstAttribute="top" secondItem="e2H-J4-vLz" secondAttribute="top" constant="10" id="cM0-C9-eXL"/>
+                            <constraint firstItem="e2H-J4-vLz" firstAttribute="bottom" secondItem="MPT-tp-IPC" secondAttribute="bottom" constant="10" id="dXU-yS-Lje"/>
+                            <constraint firstItem="e2H-J4-vLz" firstAttribute="trailing" secondItem="MPT-tp-IPC" secondAttribute="trailing" constant="10" id="t77-PI-o7F"/>
+                            <constraint firstItem="xmv-ph-jMJ" firstAttribute="top" secondItem="X87-wm-Gcs" secondAttribute="top" id="zfh-a0-tgs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rulesLabel" destination="B0w-ZE-k55" id="G8U-f7-0vM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88E-Ww-KHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="689"/>
+        </scene>
         <!--Team View Controller-->
         <scene sceneID="RXs-Q4-es6">
             <objects>
