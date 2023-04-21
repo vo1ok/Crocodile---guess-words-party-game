@@ -79,6 +79,9 @@
                             <constraint firstItem="xmv-ph-jMJ" firstAttribute="top" secondItem="X87-wm-Gcs" secondAttribute="top" id="zfh-a0-tgs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rulesLabel" destination="B0w-ZE-k55" id="G8U-f7-0vM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88E-Ww-KHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
