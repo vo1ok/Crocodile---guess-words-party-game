@@ -656,13 +656,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-nQ-ive" userLabel="WordView">
                                         <rect key="frame" x="0.0" y="256.33333333333331" width="393" height="236.33333333333331"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WordLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V2-2E-dar">
-                                                <rect key="frame" x="86" y="20.000000000000004" width="221" height="57.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V2-2E-dar">
+                                                <rect key="frame" x="196.66666666666666" y="20.000000000000004" width="0.0" height="57.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Way of guessing with two lines of text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="13E-OO-6SJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="13E-OO-6SJ">
                                                 <rect key="frame" x="60" y="122.33333333333337" width="273" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="hzy-me-OF3"/>
@@ -913,6 +913,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Turn:" destination="Bqm-IE-fwm" eventType="touchUpInside" id="7Yp-T4-7ql"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -931,6 +934,7 @@
                     <navigationItem key="navigationItem" id="41g-CY-Zcs"/>
                     <connections>
                         <outlet property="image" destination="EZj-Df-sfx" id="2aP-z0-arU"/>
+                        <outlet property="nextTeamLabel" destination="Whn-q6-wJE" id="7Jt-ev-h82"/>
                         <outlet property="scores" destination="pOc-aZ-wgW" id="d2d-XY-H8P"/>
                         <outlet property="teamName" destination="YV5-7j-8D7" id="HAD-OP-Ahh"/>
                         <segue destination="aah-vz-yTo" kind="show" identifier="winToResult" id="AqV-9K-3uo"/>
@@ -1047,6 +1051,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Turn:" destination="AD5-PR-XIA" eventType="touchUpInside" id="O4v-Wn-oPi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1063,6 +1070,7 @@
                     <navigationItem key="navigationItem" id="TjE-1Y-ces"/>
                     <connections>
                         <outlet property="image" destination="2Ca-Dh-G6i" id="ZAW-nE-bGI"/>
+                        <outlet property="nextTeamLabel" destination="MA9-Tm-BVH" id="7Dr-BL-nWZ"/>
                         <outlet property="scores" destination="bDs-5H-iOP" id="IkO-gY-fFK"/>
                         <outlet property="teamName" destination="PJG-YJ-ny7" id="soj-S7-feN"/>
                         <segue destination="aah-vz-yTo" kind="show" identifier="loseToResult" id="D3C-vL-rL3"/>
@@ -1310,7 +1318,7 @@
         <segue reference="D3C-vL-rL3"/>
         <segue reference="wAZ-wv-WE0"/>
         <segue reference="Oyz-xf-pAs"/>
-        <segue reference="phN-CB-sPG"/>
+        <segue reference="Ph9-BO-CjG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1х2" width="168" height="168"/>

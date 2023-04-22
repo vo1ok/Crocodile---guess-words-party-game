@@ -12,8 +12,10 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var team2Scores: UILabel!
     @IBOutlet weak var team2Name: UILabel!
     @IBOutlet weak var team2Image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        thirdView.removeFromSuperview()
         updateUI()
     }
     

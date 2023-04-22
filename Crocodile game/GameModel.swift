@@ -33,12 +33,12 @@ struct GameModel {
     ]
     
     var teams = [
-        Team(image: "2", teamName: "Лягушки", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "1", teamName: "Смельчаки", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "3", teamName: "Скромняги", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "2", teamName: "Солевые", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "3", teamName: "Принцессы", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "1", teamName: "Top G`s", scores: 0, turnsCount: 0, yourTurn: false)
+        Team(image: "command3", teamName: "Лягушки", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command2", teamName: "Смельчаки", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command1", teamName: "Скромняги", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command3", teamName: "Солевые", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command4", teamName: "Принцессы", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command2", teamName: "Top G`s", scores: 0, turnsCount: 0, yourTurn: false)
     ]
     
    mutating func getRandomTeam() -> Team {
