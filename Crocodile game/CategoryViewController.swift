@@ -37,10 +37,10 @@ class CategoryViewController: UIViewController {
     }
     
     func updateCheckMark(_ sender: UIButton) {
-//        checkMarkAnimals.image = nil
-//        checkMarkFood.image = nil
-//        checkMarkPeople.image = nil
-//        checkMarkHobbies.image = nil
+        checkMarkAnimals.image = nil
+        checkMarkFood.image = nil
+        checkMarkPeople.image = nil
+        checkMarkHobbies.image = nil
         switch sender.titleLabel?.text {
         case "Animals":
             checkMarkAnimals.image = UIImage(systemName: "checkmark.circle.fill")

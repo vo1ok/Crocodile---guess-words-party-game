@@ -134,6 +134,7 @@
                                 <state key="normal" image="chevron.backward" catalog="system"/>
                                 <connections>
                                     <action selector="backwardButtonPressed:" destination="rhW-3l-lcD" eventType="touchUpInside" id="lB4-Cb-qCA"/>
+                                    <segue destination="Yrd-RN-yYR" kind="show" identifier="goBack" id="A9E-0R-uxz"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-tp-IPC">
@@ -711,8 +712,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-nQ-ive" userLabel="WordView">
                                         <rect key="frame" x="0.0" y="256.33333333333331" width="393" height="236.33333333333331"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WordLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V2-2E-dar">
-                                                <rect key="frame" x="86" y="20.000000000000004" width="221" height="57.333333333333343"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V2-2E-dar">
+                                                <rect key="frame" x="196.66666666666666" y="20.000000000000004" width="0.0" height="57.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -857,6 +858,7 @@
                         <outlet property="wordLabel" destination="4V2-2E-dar" id="gu4-iE-fRv"/>
                         <segue destination="Bqm-IE-fwm" kind="show" identifier="goToWin" id="jRN-er-CdV"/>
                         <segue destination="AD5-PR-XIA" kind="show" identifier="goToLose" id="djL-yx-Kp6"/>
+                        <segue destination="Yrd-RN-yYR" kind="show" identifier="cancelToStart" id="XzT-Qa-bdQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4LZ-5s-Tn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1015,10 +1017,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                        <connections>
-                                            <action selector="Turn:" destination="Bqm-IE-fwm" eventType="touchUpInside" id="7Yp-T4-7ql"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="WBq-fe-U3O" firstAttribute="leading" secondItem="DWd-Vn-ikY" secondAttribute="leading" id="jef-uk-vbI"/>
@@ -1046,6 +1044,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="Turn:" destination="Bqm-IE-fwm" eventType="touchUpInside" id="Q9E-rT-hEg"/>
                                     <action selector="readyButtonPressed:" destination="rhW-3l-lcD" eventType="touchUpInside" id="OdK-Yr-QT3"/>
                                 </connections>
                             </button>
@@ -1068,10 +1067,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="41g-CY-Zcs"/>
                     <connections>
-                        <outlet property="image" destination="EZj-Df-sfx" id="2aP-z0-arU"/>
+                        <outlet property="image" destination="IDD-tJ-x9N" id="hho-OF-kPv"/>
                         <outlet property="nextTeamLabel" destination="Whn-q6-wJE" id="7Jt-ev-h82"/>
-                        <outlet property="scores" destination="pOc-aZ-wgW" id="d2d-XY-H8P"/>
-                        <outlet property="teamName" destination="YV5-7j-8D7" id="HAD-OP-Ahh"/>
+                        <outlet property="scores" destination="nRV-uI-pKa" id="T6k-lX-EQc"/>
+                        <outlet property="teamName" destination="osg-NW-IyY" id="rxm-zV-G3l"/>
                         <segue destination="aah-vz-yTo" kind="show" identifier="winToResult" id="AqV-9K-3uo"/>
                         <segue destination="GwB-pg-kGa" kind="show" identifier="backFromWin" id="rIY-Xv-K3r"/>
                     </connections>
@@ -1199,7 +1198,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" name="Green"/>
+                                        <color key="backgroundColor" name="Red"/>
                                         <constraints>
                                             <constraint firstItem="fIA-0f-Sej" firstAttribute="centerX" secondItem="f2C-WS-r6R" secondAttribute="centerX" id="3xa-fc-bIc"/>
                                             <constraint firstItem="MZN-ol-kiV" firstAttribute="top" secondItem="cfU-du-lS9" secondAttribute="bottom" constant="39" id="75x-GO-fs3"/>
@@ -1220,10 +1219,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                        <connections>
-                                            <action selector="Turn:" destination="AD5-PR-XIA" eventType="touchUpInside" id="O4v-Wn-oPi"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="FNG-sB-3gz" firstAttribute="leading" secondItem="P7g-yM-gS6" secondAttribute="leading" id="Ncm-9t-ypk"/>
@@ -1251,6 +1246,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="Turn:" destination="AD5-PR-XIA" eventType="touchUpInside" id="N1c-8m-yz9"/>
                                     <action selector="readyButtonPressed:" destination="rhW-3l-lcD" eventType="touchUpInside" id="2OR-hb-YPj"/>
                                 </connections>
                             </button>
@@ -1272,10 +1268,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="TjE-1Y-ces"/>
                     <connections>
-                        <outlet property="image" destination="2Ca-Dh-G6i" id="ZAW-nE-bGI"/>
-                        <outlet property="nextTeamLabel" destination="MA9-Tm-BVH" id="7Dr-BL-nWZ"/>
-                        <outlet property="scores" destination="bDs-5H-iOP" id="IkO-gY-fFK"/>
-                        <outlet property="teamName" destination="PJG-YJ-ny7" id="soj-S7-feN"/>
+                        <outlet property="image" destination="HWC-Yw-FWa" id="Aw0-r7-xEW"/>
+                        <outlet property="nextTeamLabel" destination="MZN-ol-kiV" id="Pcf-mf-Wia"/>
+                        <outlet property="scores" destination="Jww-2e-iFE" id="yDb-Qh-x69"/>
+                        <outlet property="teamName" destination="Lwz-y6-IvQ" id="0wK-yE-Rf8"/>
                         <segue destination="aah-vz-yTo" kind="show" identifier="loseToResult" id="D3C-vL-rL3"/>
                         <segue destination="GwB-pg-kGa" kind="show" identifier="backFromLose" id="wAZ-wv-WE0"/>
                     </connections>
@@ -1537,13 +1533,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="rrA-eB-xrD"/>
                     <connections>
-                        <outlet property="team1Image" destination="qKV-ES-0Ss" id="St3-kH-agG"/>
-                        <outlet property="team1Name" destination="EMR-ec-diK" id="yCl-E7-EBg"/>
-                        <outlet property="team1Scores" destination="eBw-V0-hkl" id="qao-8u-AEc"/>
-                        <outlet property="team2Image" destination="wl4-gz-LPO" id="d4K-so-LwK"/>
-                        <outlet property="team2Name" destination="fDr-gC-XMW" id="x04-as-16y"/>
-                        <outlet property="team2Scores" destination="0EI-ad-WHC" id="xcH-nt-BfF"/>
-                        <outlet property="thirdView" destination="16l-ae-hP2" id="UXy-Yd-kIt"/>
+                        <outlet property="team1Image" destination="VDU-Ez-aBk" id="9QL-tu-cQU"/>
+                        <outlet property="team1Name" destination="m3i-QE-Dgf" id="IEE-ce-CnX"/>
+                        <outlet property="team1Scores" destination="Zl1-cE-ihb" id="UgL-Fs-Ash"/>
+                        <outlet property="team2Image" destination="4SB-3W-Vy2" id="Jro-Px-mFa"/>
+                        <outlet property="team2Name" destination="oFL-zH-It5" id="SbS-SU-bfj"/>
+                        <outlet property="team2Scores" destination="Ku0-PB-t2J" id="r2x-6Y-Lbe"/>
+                        <outlet property="thirdView" destination="mAu-JS-ta7" id="7FF-K5-vZ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5q-Fh-qii" sceneMemberID="firstResponder"/>
@@ -1552,10 +1548,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AqV-9K-3uo"/>
-        <segue reference="rIY-Xv-K3r"/>
+        <segue reference="djL-yx-Kp6"/>
+        <segue reference="D3C-vL-rL3"/>
+        <segue reference="wAZ-wv-WE0"/>
         <segue reference="Oyz-xf-pAs"/>
-        <segue reference="phN-CB-sPG"/>
+        <segue reference="XzT-Qa-bdQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="375" height="812"/>

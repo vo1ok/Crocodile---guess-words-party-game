@@ -7,23 +7,12 @@ class RulesViewController: UIViewController {
         super.viewDidLoad()
         rulesLabel.text = """
     \n
-    В игру играют командами из двух или более человек.\n
-
-    Задача каждого игрока команды - объяснить слово, которое он видит на экране, следуя условиям, которые дополнительно указаны под загаданным словом.\n
-
-    Чем больше слов отгадала команда, тем больше она заработает баллов.\n
-
-    Выигрывает команда, набравшая больше всего баллов.\n
-    
-    На отгадывание слова дается одна минуту. \n
-    При нарушении правил объяснения слова, ход передается следующей команде.
-
-    ...
-    ...
-    flprlgprlgpelgplrplgprelgplreglprelgplrepglprelgprelg\n
-    flerpglprelgplthpokrgpo,nboymtpnonmpotekpohkge\n
-    frglpeplgperlgplerpglerplgperlgplrelgprelgprlgpleprlg
-    
+The game is played in teams of two or more.\n
+The task of each player of the team is to explain the word that he sees on the screen, following the conditions that are additionally indicated under the hidden word.\n
+The more words a team guesses, the more points it will earn.\n
+The team with the most points wins.\n
+One minute is given to guess the word. \n
+If the rules for explaining a word are violated, the move is passed to the next team.
 """
     }
 }
