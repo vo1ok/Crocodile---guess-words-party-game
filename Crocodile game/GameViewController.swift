@@ -1,5 +1,6 @@
 //  Created by Иван Станкин on 17.04.2023.
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class GameViewController: UIViewController {
     var timerToStart = Timer()
     var seconds = 59
     var timeToStart = 5
+    var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,8 @@ class GameViewController: UIViewController {
         startTimerLabel.text = "\(timerToStart)"
         self.startTimerView.alpha = 0.97
         startTimer()
+        countdownSound()
+        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
             self.updateUI()
@@ -37,10 +41,14 @@ class GameViewController: UIViewController {
     
 
     @IBAction func rightButtonPressed(_ sender: UIButton) {
+        timer.invalidate()
+        playSound(soundName: "right")
         model?.increseScores()
         performSegue(withIdentifier: "goToWin", sender: sender)
     }
     @IBAction func wrongButtonPressed(_ sender: UIButton) {
+        timer.invalidate()
+        playSound(soundName: "wrong")
         performSegue(withIdentifier: "goToLose", sender: sender)
     }
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
@@ -56,18 +64,24 @@ class GameViewController: UIViewController {
     }
                                       
     @objc func updateTimer() {
-             if seconds > 9 {
-                 timerLabel.text = "00:\(seconds)"
-                 seconds -= 1
-             } else if seconds > 0 {
-                 timerLabel.text = "00:0\(seconds)"
-                 seconds -= 1
-             } else {
-                 seconds = 0
-                 timerLabel.text = "00:0\(seconds)"
-                 timer.invalidate()
-                 performSegue(withIdentifier: "goToLose", sender: goToLose)
-             }
+        switch seconds {
+        case 11...59:
+            timerLabel.text = "00:\(seconds)"
+            seconds -= 1
+        case 10:
+            timerLabel.text = "00:10"
+            playSound(soundName: "countdown")
+            seconds -= 1
+        case 1...9:
+            timerLabel.text = "00:0\(seconds)"
+            seconds -= 1
+        default:
+            seconds = 0
+            timerLabel.text = "00:0\(seconds)"
+            timer.invalidate()
+            performSegue(withIdentifier: "goToLose", sender: goToLose)
+        }
+        
          }
     
     @objc func startTimerUpdate() {
@@ -93,7 +107,7 @@ class GameViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Yes",
                                           style: UIAlertAction.Style.destructive,
                                           handler: {(_: UIAlertAction!) in
-               // self.timer.invalidate()
+                self.timer.invalidate()
                // performSegue(withIdentifier: "cancelToStart", sender: UIAlertAction)
             }))
              
@@ -109,6 +123,18 @@ class GameViewController: UIViewController {
         } else if segue.identifier == "goToLose" {
             guard let wrongVC = segue.destination as? WrongViewController else {return}
             wrongVC.model = model
+        }
+    }
+    
+    func playSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    
+    func countdownSound() {
+        if seconds == 10 {
+            playSound(soundName: "countdown")
         }
     }
 }
