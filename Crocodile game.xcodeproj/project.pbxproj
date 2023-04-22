@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0513933129F40DD300B78756 /* countdown.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0513932E29F40DD300B78756 /* countdown.wav */; };
+		0513933229F40DD300B78756 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0513932F29F40DD300B78756 /* wrong.wav */; };
+		0513933329F40DD300B78756 /* right.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0513933029F40DD300B78756 /* right.wav */; };
 		05E8564529ED2F25008DCB97 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E8564429ED2F25008DCB97 /* GameViewController.swift */; };
 		941A9CA329F300400047909C /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A9CA229F300400047909C /* GameModel.swift */; };
 		941A9CA529F301DC0047909C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A9CA429F301DC0047909C /* ResultViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0513932E29F40DD300B78756 /* countdown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = countdown.wav; sourceTree = "<group>"; };
+		0513932F29F40DD300B78756 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		0513933029F40DD300B78756 /* right.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = right.wav; sourceTree = "<group>"; };
 		05E8564429ED2F25008DCB97 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		941A9CA229F300400047909C /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		941A9CA429F301DC0047909C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0513933429F40DF700B78756 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0513933029F40DD300B78756 /* right.wav */,
+				0513932F29F40DD300B78756 /* wrong.wav */,
+				0513932E29F40DD300B78756 /* countdown.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		95374C2929EC8D1D008C8372 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +103,7 @@
 				95374C3E29EC8D22008C8372 /* Assets.xcassets */,
 				95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */,
 				95374C4329EC8D22008C8372 /* Info.plist */,
+				0513933429F40DF700B78756 /* Sounds */,
 			);
 			path = "Crocodile game";
 			sourceTree = "<group>";
@@ -150,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				95374C4229EC8D22008C8372 /* LaunchScreen.storyboard in Resources */,
+				0513933229F40DD300B78756 /* wrong.wav in Resources */,
 				95374C3F29EC8D22008C8372 /* Assets.xcassets in Resources */,
+				0513933329F40DD300B78756 /* right.wav in Resources */,
+				0513933129F40DD300B78756 /* countdown.wav in Resources */,
 				95374C3D29EC8D1D008C8372 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
