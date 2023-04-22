@@ -9,7 +9,9 @@ import UIKit
 
 class TeamViewController: UIViewController {
     
-    var model: GameModel?
+    var model = GameModel()
+    var team1: Team?
+    var team2: Team?
     
     @IBOutlet weak var firstCommandLabel: UILabel!
     @IBOutlet weak var secondCommandLabel: UILabel!
@@ -17,46 +19,36 @@ class TeamViewController: UIViewController {
     @IBOutlet weak var firstCommandIcon: UIImageView!
     @IBOutlet weak var secondCommandIcon: UIImageView!
     
-    let commandNames = ["Cowboys", "Aliens", "Low expectations", "All pain, no gain", "Baby boomers", "Yellow cards", "Spice girls", "Cereal Killers", "X-men", "Hobbits"]
-    let commandIcon = [ #imageLiteral(resourceName: "command1"), #imageLiteral(resourceName: "command2"), #imageLiteral(resourceName: "command3"), #imageLiteral(resourceName: "command4")]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setCommandNames()
-        setCommandIcon()
+        updateUI()
+        model.team1 = team1
+        model.team2 = team2
     }
     
-    @IBAction func backwardButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToRullesViewController", sender: self)
+    func updateUI() {
+        team1 = model.getRandomTeam()
+        team1?.yourTurn = true
+        team2 = model.getRandomTeam()
+        firstCommandIcon.image = UIImage(named: team1!.image)
+        firstCommandLabel.text = team1?.teamName
+        secondCommandIcon.image = UIImage(named: team2!.image)
+        secondCommandLabel.text = team2?.teamName
     }
+    
     
     @IBAction func readyButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToCategoryViewController", sender: self)
+        
+    }
+    @IBAction func backwardButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goBack", sender: sender)
     }
     
-    func setCommandNames() {
-        let firstName = commandNames.randomElement()
-        var secondName = commandNames.randomElement()
-        
-        while secondName == firstName {
-            secondName = commandNames.randomElement()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToTheme"{
+            guard let categoryVC = segue.destination as? CategoryViewController else {return}
+            categoryVC.model = model
         }
-
-        firstCommandLabel.text = firstName
-        secondCommandLabel.text = secondName
     }
-    
-    func setCommandIcon() {
-        let firstIcon = commandIcon.randomElement()
-        var secondIcon = commandIcon.randomElement()
-        
-        while secondIcon == firstIcon {
-            secondIcon = commandIcon.randomElement()
-        }
-        
-        firstCommandIcon.image = firstIcon
-        secondCommandIcon.image = secondIcon
-    }
-
 }
 
