@@ -337,7 +337,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startGamePressed:" destination="PdI-CG-QPl" eventType="touchUpInside" id="Oxm-he-Itd"/>
-                                    <segue destination="GwB-pg-kGa" kind="show" identifier="gameStart" id="XCW-6A-ZRF"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="zTs-HW-oUl" userLabel="Category Stack View">
@@ -607,6 +606,7 @@
                         <outlet property="checkMarkFood" destination="8U0-5x-kR6" id="nwe-br-YIx"/>
                         <outlet property="checkMarkHobbies" destination="MQU-4O-pXu" id="x1W-Sb-TSD"/>
                         <outlet property="checkMarkPeople" destination="rfo-Zk-MMV" id="b8R-hM-ydO"/>
+                        <segue destination="GwB-pg-kGa" kind="show" identifier="gameStart" id="qqy-vJ-e4J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U4q-by-c5i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -693,6 +693,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="Right">
                                                             <color key="baseBackgroundColor" red="0.45490196078431372" green="0.65490196078431373" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="rightButtonPressed:" destination="GwB-pg-kGa" eventType="touchUpInside" id="oii-Hx-4xO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -711,6 +714,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="Violated the rules">
                                                             <color key="baseBackgroundColor" red="0.90196078431372551" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="wrongButtonPressed:" destination="GwB-pg-kGa" eventType="touchUpInside" id="UUF-IL-CVF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -784,9 +790,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="8Ek-NZ-OdT"/>
                     <connections>
+                        <outlet property="goToLose" destination="aWH-6K-gTl" id="jjb-WE-kyx"/>
                         <outlet property="startTimerLabel" destination="Aa8-5U-ud1" id="GDc-By-Ukf"/>
                         <outlet property="startTimerView" destination="N2v-Rk-et0" id="Btg-uX-U3y"/>
+                        <outlet property="termLabel" destination="13E-OO-6SJ" id="6uF-Aw-Yix"/>
                         <outlet property="timerLabel" destination="Cb6-Sc-dvE" id="loI-dm-xdS"/>
+                        <outlet property="wordLabel" destination="4V2-2E-dar" id="gu4-iE-fRv"/>
                         <segue destination="Bqm-IE-fwm" kind="show" identifier="goToWin" id="jRN-er-CdV"/>
                         <segue destination="AD5-PR-XIA" kind="show" identifier="goToLose" id="djL-yx-Kp6"/>
                     </connections>
@@ -921,6 +930,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="41g-CY-Zcs"/>
                     <connections>
+                        <outlet property="image" destination="EZj-Df-sfx" id="2aP-z0-arU"/>
+                        <outlet property="scores" destination="pOc-aZ-wgW" id="d2d-XY-H8P"/>
+                        <outlet property="teamName" destination="YV5-7j-8D7" id="HAD-OP-Ahh"/>
                         <segue destination="aah-vz-yTo" kind="show" identifier="winToResult" id="AqV-9K-3uo"/>
                         <segue destination="GwB-pg-kGa" kind="show" identifier="backFromWin" id="rIY-Xv-K3r"/>
                     </connections>
@@ -1050,6 +1062,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="TjE-1Y-ces"/>
                     <connections>
+                        <outlet property="image" destination="2Ca-Dh-G6i" id="ZAW-nE-bGI"/>
+                        <outlet property="scores" destination="bDs-5H-iOP" id="IkO-gY-fFK"/>
+                        <outlet property="teamName" destination="PJG-YJ-ny7" id="soj-S7-feN"/>
                         <segue destination="aah-vz-yTo" kind="show" identifier="loseToResult" id="D3C-vL-rL3"/>
                         <segue destination="GwB-pg-kGa" kind="show" identifier="backFromLose" id="wAZ-wv-WE0"/>
                     </connections>
@@ -1276,6 +1291,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rrA-eB-xrD"/>
+                    <connections>
+                        <outlet property="team1Image" destination="qKV-ES-0Ss" id="St3-kH-agG"/>
+                        <outlet property="team1Name" destination="EMR-ec-diK" id="yCl-E7-EBg"/>
+                        <outlet property="team1Scores" destination="eBw-V0-hkl" id="qao-8u-AEc"/>
+                        <outlet property="team2Image" destination="wl4-gz-LPO" id="d4K-so-LwK"/>
+                        <outlet property="team2Name" destination="fDr-gC-XMW" id="x04-as-16y"/>
+                        <outlet property="team2Scores" destination="0EI-ad-WHC" id="xcH-nt-BfF"/>
+                        <outlet property="thirdView" destination="16l-ae-hP2" id="UXy-Yd-kIt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5q-Fh-qii" sceneMemberID="firstResponder"/>
             </objects>
@@ -1283,10 +1307,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AqV-9K-3uo"/>
-        <segue reference="XCW-6A-ZRF"/>
-        <segue reference="2u4-eZ-hLA"/>
-        <segue reference="Ph9-BO-CjG"/>
+        <segue reference="D3C-vL-rL3"/>
+        <segue reference="wAZ-wv-WE0"/>
+        <segue reference="Oyz-xf-pAs"/>
+        <segue reference="phN-CB-sPG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1х2" width="168" height="168"/>
