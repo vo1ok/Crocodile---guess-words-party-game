@@ -17,28 +17,28 @@ struct GameModel {
     var words: [String]?
     var count: Int?
     
-    let terms = ["Объясни с помощью слов.",
-                 "Объясни с помощью жестов.",
-                 "Объясни с помощью рисунка.",
-                 "Объясняй со злостью.",
-                 "Объясняй с помощью мимики.",
-                 "Объясняй вульгарно.",
-                 "Объясняй сексуально."]
+    let terms = ["Explain with words.",
+                 "Explain with gestures.",
+                 "Explain by drawing.",
+                 "Explain with anger.",
+                 "Explain with facial expressions.",
+                 "Explain vulgarly.",
+                 "Explain sexy."]
     
     let categories = [
-        Category(CategoryName: "Еда", CategoryWords: ["Картошка", "Паста", "Торт", "Кабачок", "Пирог", "Драконий глаз", "Жаренная печень", "Конфета", "Багет", "Вишня", "Арбуз", "Капуста", "Молоко", "Сливочное Масло", "Соль", "Рыба", "Сосиска в тесте", "Пицца", "Орех", "Куриное мясо"]),
-        Category(CategoryName: "Живтоные", CategoryWords: ["Петух", "Бык", "Овца", "Жеребец", "Мартышка", "Собака", "Питон", "Единорог", "Волк", "Гидра", "Ворон", "Кенгуру", "Медоед", "Тюлень", "Дельфин", "Осьминог", "Мантикора", "Человек", "Ленивец", "Свинья"]),
-        Category(CategoryName: "Личности", CategoryWords: ["Я", "Ты", "Он", "Она", "Все", "Вы", "Мы", "Они", "Юлий Цезарь", "Напалеон Бонапард", "Стивен Хоккинг", "Илон Маск", "Эндрю Тейт", "Роки Бальбоа", "Иосиф Сталин", "Шрек", "Устал", "думать", "я", "да"]),
-        Category(CategoryName: "Хобби", CategoryWords: ["Баскетболл", "Футболл", "Хокей", "Скалолазанье", "Борьба", "Бокс", "Коллекционирование монет", "Шопинг", "Рисование", "Изучение языков", "Чтение журналов", "Игра на гитаре", "Игра на чужих чувствах", "Компьютерные игры", "Весечение фигур из дерева", "Машины", "Езда на велосипеде", "Походы в горы", "Плаванье", "Дайвинг"]),
+        Category(CategoryName: "Еда", CategoryWords: ["Potato", "Pasta", "Cake", "Pie", "Dragon Fruit", "Liver", "Candy", "Bread", "Cherry", "Watermelon", "Milk", "Chiken Breast", "Adjarian Khachapuri", "Khinkali", "Fish", "Sushi", "Pizza", "Coffee", "Куриное мясо", "Apple"]),
+        Category(CategoryName: "Живтоные", CategoryWords: ["Cock", "Bull", "Sheep", "Horse", "Monkey", "Dog", "Python", "Unicorn", "Wolf", "Hydra", "Crave", "Kangoroo", "Honey Badger", "Elephant", "Dolphin", "Octopus", "Manticore", "Human", "Sloth", "Pig"]),
+        Category(CategoryName: "Личности", CategoryWords: ["Elon Mask", "Richard Branson", "Joe Biden", "Alex Lukashenko", "Joseph Stalin", "Juilius Caesar", "Winston Churchill", "Nicola Tesla", "Albert Einstrein", "Vincent van Gogh", "Ivan the Terrible", "Iron Man", "Andry Tate", "Rocky Balboa", "Bansky", "Mr. Beast", "Steve Jobs", "Tim Cook", "Bill Gates", "Warren Buffett"]),
+        Category(CategoryName: "Хобби", CategoryWords: ["Basketball", "Football", "Hockey", "Rugby", "MMA", "Thai Bopxing", "Chess", "Tennis", "Sprint Run", "Baseball", "Cricket", "Cybersport", "Competetive Eating ", "Golf", "Horse Racing", "Racing", "Iron Man", "Swimming", "Diving", "Parachuting"]),
     ]
     
     var teams = [
-        Team(image: "command3", teamName: "Лягушки", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "command2", teamName: "Смельчаки", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "command1", teamName: "Скромняги", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "command3", teamName: "Солевые", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "command4", teamName: "Принцессы", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "command2", teamName: "Top G`s", scores: 0, turnsCount: 0, yourTurn: false)
+        Team(image: "command3", teamName: "Quicksand Quagmires", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command2", teamName: "Awkward Turtles", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command1", teamName: "Misfit Mavericks", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command3", teamName: "Flaming Flamingos", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command4", teamName: "Wacky Wombats", scores: 0, turnsCount: 0, yourTurn: false),
+        Team(image: "command2", teamName: "Looney Llamas", scores: 0, turnsCount: 0, yourTurn: false)
     ]
     
    mutating func getRandomTeam() -> Team {

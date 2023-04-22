@@ -87,17 +87,14 @@ class GameViewController: UIViewController {
                                           style: UIAlertAction.Style.cancel,
                                           handler: { _ in
                 
-                //Cancel Action
-//                self.timer.invalidate()
+                //self.timer.invalidate()
                 
             }))
-            alert.addAction(UIAlertAction(title: "Stop",
+            alert.addAction(UIAlertAction(title: "Yes",
                                           style: UIAlertAction.Style.destructive,
                                           handler: {(_: UIAlertAction!) in
-                
-                //Return to main screen action
-//                self.timer.invalidate()
-                
+               // self.timer.invalidate()
+               // performSegue(withIdentifier: "cancelToStart", sender: UIAlertAction)
             }))
              
             DispatchQueue.main.async {
