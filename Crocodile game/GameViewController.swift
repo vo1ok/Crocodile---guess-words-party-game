@@ -108,7 +108,7 @@ class GameViewController: UIViewController {
                                           style: UIAlertAction.Style.destructive,
                                           handler: {(_: UIAlertAction!) in
                 self.timer.invalidate()
-               // performSegue(withIdentifier: "cancelToStart", sender: UIAlertAction)
+                self.performSegue(withIdentifier: "cancelToStart", sender: nil)
             }))
              
             DispatchQueue.main.async {
