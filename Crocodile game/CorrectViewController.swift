@@ -27,7 +27,7 @@ class CorrectViewController: UIViewController {
             teamName.text = model?.team1?.teamName
             scores.text = "\(model!.team1!.scores)"
             image.image = UIImage(named: model!.team1!.image)
-            nextTeamLabel.text = "Слудующий ход - \((model?.team2?.teamName)!)"
+            nextTeamLabel.text = "Next turn - \((model?.team2?.teamName)!)"
         } else if (model?.team2!.yourTurn)! {
             teamName.text = model?.team2?.teamName
             scores.text = "\(model!.team2!.scores)"
