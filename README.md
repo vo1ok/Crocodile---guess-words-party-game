@@ -1,14 +1,13 @@
 # Crocodile - Guess Words
-
-# Crocodile - Guess Words is a word-guessing game application developed for iOS devices. The game is designed to be simple, engaging, and enjoyable for all types of users. The app features a wide range of word categories, including animals, food, and countries, and provides users with the option to create custom word lists.
+  Crocodile - Guess Words is a word-guessing game application developed for iOS devices. The game is designed to be simple, engaging, and enjoyable for all types of users. The app features a wide range of word categories, including animals, food, and countries, and provides users with the option to create custom word lists.
 
 # Installation
-Crocodile - Guess Words can be downloaded from the App Store and is compatible with iOS devices running iOS 15.0 and above.
+Crocodile - Guess Words is compatible with iOS devices running iOS 15.0 and above.
 
 # Features
 The Crocodile - Guess Words app is packed with features that offer users a smooth and immersive gaming experience. Some of the key features of the app are:
 
-- Word Categories: The app offers a variety of word categories, ensuring that users never run out of words to guess. The categories range from animals to countries, making the game suitable for users of all ages and interests.
+- Word Categories: The app offers a variety of word categories, ensuring that users never run out of words to guess. The categories range from animals to persons, making the game suitable for users of all ages and interests.
 
 - Timer: To make the game more challenging and exciting, the app comes with a built-in timer. The timer keeps track of the time remaining for each turn, adding a sense of urgency to the game.
 
@@ -20,8 +19,8 @@ To play Crocodile - Guess Words, users can simply open the app and select a word
 # Contributing
 We welcome feedback and contributions to improve the app. If you have any suggestions or ideas to enhance the game, feel free to contact us at volokserge@gmail.com. We are committed to improving the game and providing our users with the best possible gaming experience.
 
-# License
-Crocodile - Guess Words is licensed under the MIT License. Please see the LICENSE file for more information.
-
 # Acknowledgements
 Crocodile - Guess Words is inspired by the popular board game Taboo. We extend our gratitude to the creators of Taboo for their innovative and entertaining game.
+
+# Studying project
+The app is a project developed by a group of 6 students who used Scrum methodology and git to collaborate effectively. The app was designed as a word-guessing game that was engaging and fun to play, with a wide range of word categories and a user-friendly interface. The team members took on different roles and used agile practices, including daily stand-up meetings and sprint planning sessions, to ensure that the project remained on track. Through their hard work and dedication, the team successfully developed an app that met their goals and received positive feedback from users.
