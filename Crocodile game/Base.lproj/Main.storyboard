@@ -677,9 +677,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-YG-YH5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-YG-YH5">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="02F-jW-5Fp" userLabel="Main Stack View">
                                 <rect key="frame" x="0.0" y="59" width="393" height="749"/>
@@ -841,7 +840,11 @@
                             <constraint firstItem="02F-jW-5Fp" firstAttribute="top" secondItem="UcT-Bf-qCb" secondAttribute="top" id="6Lp-QF-QG2"/>
                             <constraint firstItem="N2v-Rk-et0" firstAttribute="top" secondItem="BRc-HG-Cst" secondAttribute="top" id="FLm-qr-IFq"/>
                             <constraint firstAttribute="bottom" secondItem="N2v-Rk-et0" secondAttribute="bottom" id="JGY-jM-92l"/>
+                            <constraint firstItem="CeW-YG-YH5" firstAttribute="trailing" secondItem="UcT-Bf-qCb" secondAttribute="trailing" id="Nul-69-Dam"/>
+                            <constraint firstItem="CeW-YG-YH5" firstAttribute="leading" secondItem="UcT-Bf-qCb" secondAttribute="leading" id="U25-a8-jmA"/>
+                            <constraint firstAttribute="bottom" secondItem="CeW-YG-YH5" secondAttribute="bottom" id="WAS-cd-Obw"/>
                             <constraint firstItem="02F-jW-5Fp" firstAttribute="leading" secondItem="UcT-Bf-qCb" secondAttribute="leading" id="Wqd-Zq-BDS"/>
+                            <constraint firstItem="CeW-YG-YH5" firstAttribute="top" secondItem="BRc-HG-Cst" secondAttribute="top" id="XII-sh-jrO"/>
                             <constraint firstItem="N2v-Rk-et0" firstAttribute="trailing" secondItem="UcT-Bf-qCb" secondAttribute="trailing" id="crY-9D-vao"/>
                             <constraint firstItem="UcT-Bf-qCb" firstAttribute="bottom" secondItem="02F-jW-5Fp" secondAttribute="bottom" constant="10" id="dei-2r-bV6"/>
                             <constraint firstItem="UcT-Bf-qCb" firstAttribute="trailing" secondItem="02F-jW-5Fp" secondAttribute="trailing" id="sbl-Re-ACP"/>
@@ -1297,7 +1300,7 @@
                                     <constraint firstAttribute="height" constant="40" id="Fbb-ro-KRw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvY-Jm-sSk">
@@ -1548,10 +1551,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="jRN-er-CdV"/>
         <segue reference="AqV-9K-3uo"/>
         <segue reference="rIY-Xv-K3r"/>
         <segue reference="2u4-eZ-hLA"/>
-        <segue reference="XzT-Qa-bdQ"/>
+        <segue reference="Ph9-BO-CjG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="375" height="812"/>
