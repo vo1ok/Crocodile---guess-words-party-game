@@ -90,8 +90,36 @@
 			children = (
 				95374C3529EC8D1D008C8372 /* AppDelegate.swift */,
 				95374C3729EC8D1D008C8372 /* SceneDelegate.swift */,
+				CA96A21629F5B00200057240 /* Model */,
+				CA96A21729F5B01A00057240 /* View */,
+				CA96A21829F5B02700057240 /* Controller */,
+				95374C3E29EC8D22008C8372 /* Assets.xcassets */,
+				95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */,
+				95374C4329EC8D22008C8372 /* Info.plist */,
+				0513933429F40DF700B78756 /* Sounds */,
+			);
+			path = "Crocodile game";
+			sourceTree = "<group>";
+		};
+		CA96A21629F5B00200057240 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				941A9CA229F300400047909C /* GameModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CA96A21729F5B01A00057240 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				95374C3B29EC8D1D008C8372 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CA96A21829F5B02700057240 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				95374C3929EC8D1D008C8372 /* ViewController.swift */,
 				94D9041A29F2DEEF007A9F6B /* RulesViewController.swift */,
 				CAEC847229F2EA000096C029 /* TeamViewController.swift */,
@@ -100,12 +128,8 @@
 				941A9CA629F301F00047909C /* CorrectViewController.swift */,
 				941A9CA829F3020B0047909C /* WrongViewController.swift */,
 				941A9CA429F301DC0047909C /* ResultViewController.swift */,
-				95374C3E29EC8D22008C8372 /* Assets.xcassets */,
-				95374C4029EC8D22008C8372 /* LaunchScreen.storyboard */,
-				95374C4329EC8D22008C8372 /* Info.plist */,
-				0513933429F40DF700B78756 /* Sounds */,
 			);
-			path = "Crocodile game";
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
