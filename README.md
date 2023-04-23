@@ -15,6 +15,7 @@ The Crocodile - Guess Words app is packed with features that offer users a smoot
 
 # Usage
 To play Crocodile - Guess Words, users can simply open the app and select a word category or create a custom word list. Once the word list is selected, users can divide into teams and start playing. The first player from the first team becomes the "crocodile" and describes the word or phrase to their teammates without using any of the prohibited words listed on the card. The teammates must then try to guess the word or phrase before the timer runs out. Once the word or phrase is guessed correctly, the turn passes to the next team. The game continues until all words have been guessed, and the team with the most points wins.
+![croco](https://user-images.githubusercontent.com/130062059/233832786-6492919d-45ba-4195-94cb-5a561df28025.gif)
 
 # Contributing
 We welcome feedback and contributions to improve the app. If you have any suggestions or ideas to enhance the game, feel free to contact us at volokserge@gmail.com. We are committed to improving the game and providing our users with the best possible gaming experience.
