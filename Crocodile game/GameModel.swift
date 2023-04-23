@@ -26,19 +26,17 @@ struct GameModel {
                  "Explain sexy."]
     
     let categories = [
-        Category(CategoryName: "Еда", CategoryWords: ["Potato", "Pasta", "Cake", "Pie", "Dragon Fruit", "Liver", "Candy", "Bread", "Cherry", "Watermelon", "Milk", "Chiken Breast", "Adjarian Khachapuri", "Khinkali", "Fish", "Sushi", "Pizza", "Coffee", "Куриное мясо", "Apple"]),
-        Category(CategoryName: "Живтоные", CategoryWords: ["Cock", "Bull", "Sheep", "Horse", "Monkey", "Dog", "Python", "Unicorn", "Wolf", "Hydra", "Crave", "Kangoroo", "Honey Badger", "Elephant", "Dolphin", "Octopus", "Manticore", "Human", "Sloth", "Pig"]),
-        Category(CategoryName: "Личности", CategoryWords: ["Elon Mask", "Richard Branson", "Joe Biden", "Alex Lukashenko", "Joseph Stalin", "Juilius Caesar", "Winston Churchill", "Nicola Tesla", "Albert Einstrein", "Vincent van Gogh", "Ivan the Terrible", "Iron Man", "Andry Tate", "Rocky Balboa", "Bansky", "Mr. Beast", "Steve Jobs", "Tim Cook", "Bill Gates", "Warren Buffett"]),
-        Category(CategoryName: "Хобби", CategoryWords: ["Basketball", "Football", "Hockey", "Rugby", "MMA", "Thai Bopxing", "Chess", "Tennis", "Sprint Run", "Baseball", "Cricket", "Cybersport", "Competetive Eating ", "Golf", "Horse Racing", "Racing", "Iron Man", "Swimming", "Diving", "Parachuting"]),
+        Category(CategoryName: "Food", CategoryWords: ["Potato", "Pasta", "Cake", "Pie", "Dragon Fruit", "Liver", "Candy", "Bread", "Cherry", "Watermelon", "Milk", "Chiken Breast", "Adjarian Khachapuri", "Khinkali", "Fish", "Sushi", "Pizza", "Coffee", "Куриное мясо", "Apple"]),
+        Category(CategoryName: "Animals", CategoryWords: ["Cock", "Bull", "Sheep", "Horse", "Monkey", "Dog", "Python", "Unicorn", "Wolf", "Hydra", "Crave", "Kangoroo", "Honey Badger", "Elephant", "Dolphin", "Octopus", "Manticore", "Human", "Sloth", "Pig"]),
+        Category(CategoryName: "People", CategoryWords: ["Elon Mask", "Richard Branson", "Joe Biden", "Alex Lukashenko", "Joseph Stalin", "Juilius Caesar", "Winston Churchill", "Nicola Tesla", "Albert Einstrein", "Vincent van Gogh", "Ivan the Terrible", "Iron Man", "Andry Tate", "Rocky Balboa", "Bansky", "Mr. Beast", "Steve Jobs", "Tim Cook", "Bill Gates", "Warren Buffett"]),
+        Category(CategoryName: "Hobbies", CategoryWords: ["Basketball", "Football", "Hockey", "Rugby", "MMA", "Thai Bopxing", "Chess", "Tennis", "Sprint Run", "Baseball", "Cricket", "Cybersport", "Competetive Eating ", "Golf", "Horse Racing", "Racing", "Iron Man", "Swimming", "Diving", "Parachuting"]),
     ]
     
     var teams = [
-        Team(image: "command3", teamName: "Quicksand Quagmires", scores: 0, turnsCount: 0, yourTurn: false),
         Team(image: "command2", teamName: "Awkward Turtles", scores: 0, turnsCount: 0, yourTurn: false),
         Team(image: "command1", teamName: "Misfit Mavericks", scores: 0, turnsCount: 0, yourTurn: false),
         Team(image: "command3", teamName: "Flaming Flamingos", scores: 0, turnsCount: 0, yourTurn: false),
         Team(image: "command4", teamName: "Wacky Wombats", scores: 0, turnsCount: 0, yourTurn: false),
-        Team(image: "command2", teamName: "Looney Llamas", scores: 0, turnsCount: 0, yourTurn: false)
     ]
     
    mutating func getRandomTeam() -> Team {
