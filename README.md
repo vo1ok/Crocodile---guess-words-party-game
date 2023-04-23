@@ -2,7 +2,7 @@
   Crocodile - Guess Words is a word-guessing game application developed for iOS devices. The game is designed to be simple, engaging, and enjoyable for all types of users. The app features a wide range of word categories, including animals, food, and countries, and provides users with the option to create custom word lists.
 
 # Installation
-Crocodile - Guess Words is compatible with iOS devices running iOS 15.0 and above.
+Crocodile - Guess Words is compatible with iPhones running iOS 15.0 and above.
 
 # Features
 The Crocodile - Guess Words app is packed with features that offer users a smooth and immersive gaming experience. Some of the key features of the app are:
